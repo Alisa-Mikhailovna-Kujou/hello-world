@@ -12,3 +12,4 @@ jobs:
         sudo apt install -y g++
     - run: g++ main.cpp
     - run: ls
+    - run: ./a.out
