@@ -11,4 +11,4 @@ jobs:
         sudo apt update
         sudo apt install -y g++
     - run: g++ main.cpp
-    
+    - run: ls
