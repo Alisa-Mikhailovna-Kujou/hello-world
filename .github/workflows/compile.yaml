@@ -6,8 +6,8 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-    - uses: aminya/setup-cpp@v1
-      with:
-        compiler: latest
-    - run: cpp main.cpp
-    
+    - uses: actions/checkout@v4
+    - run: |        
+      sudo apt update
+      sudo apt install -y g++
+    - run: g++ main.cpp
